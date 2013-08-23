@@ -1,0 +1,10 @@
+O repositório armazena a informação - um conjunto de documentos - de modo persistente num sistema de arquivos ou num banco de dados qualquer.
+É possível que o armazenamento seja feito em outros dispositivos capazes de "eternizar" e resgatar facilmente a informação.
+Cada servidor pode ter vários sistemas de controle de versão e cada sistema pode ter diversos repositórios, limitando-se na capacidade de gerenciamento do software e também no limite físico do hardware.
+Geralmente um repositório possui um endereço lógico que permite a conexão do cliente.
+Esse endereço pode ser um conjunto IP/porta, uma URL, um caminho do sistema de arquivos etc.
+Cada desenvolvedor possui em sua máquina uma cópia local (também chamada de working copy em inglês) somente da última versão de 
+cada documento. Essa cópia local geralmente é feita num sistema de arquivos simples (FAT, NTFS, ext3 etc). A cada alteração relevante do 
+desenvolvedor é necessário "atualizar" as informações do servidor submetendo (commit em inglês) as alterações.
+O servidor então guarda a nova alteração junto de todo o histórico mais antigo.
+ Se o desenvolvedor quer atualizar sua cópia local é necessário atualizar as informações locais, e para isso é necessário baixar novidades do servidor
